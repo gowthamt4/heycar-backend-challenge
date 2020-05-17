@@ -55,7 +55,8 @@ public class HeyCarVehicleService {
     restModel.setKW(vehicle.getKW());
     restModel.setMake(vehicle.getMake());
     restModel.setModel(vehicle.getModel());
-
+    restModel.setPrice(vehicle.getPrice());
+    restModel.setYear(vehicle.getYear());
     return restModel;
   }
 
