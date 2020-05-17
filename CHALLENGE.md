@@ -1,29 +1,31 @@
-# HeyCar Vehicle Services
+# Problems / Assumptions
 
-Repository for HeyCar Vehicle Services
+## Problems Identified
 
-## How to get started
+- It would be good if the API requirements specified for the POST upload via JSON API are clear enough.
+The document didn't give the details about dealer and dealer-provider relationship. 
+This leads to following problems
 
-1. Clone the repository and change the directory
+1. This leaves in confusion whether the dealer id should be considered as mandatory field to API.
+2. How the API should handle if the dealer not registered at HeyCar
+3. The documents says `Provider - the platform the dealers already use to manage their own listings`
+   What if a single dealer is registered at multiple providers with different dealer IDs. This leads to duplicate
+   entries.
+4. Lack of dealer and provider relationship restricts to improper design of relational tables
 
-`git clone https://github.com/gowthamt4/heycar-backend-challenge.git`
 
-`cd heycar-backend-challenge`
+- The requirements for Search API are too minimum. Here are the problems related to that.
 
-2. a) Run the app from IDE
+1. The document did not specify about the mandatory fields in search criteria. Do this need to be treated as to
+   query all the records of Vehicles those are ready to be sold from the database which is not a good practice.
+2. Generally, there should be sorting functionality for a search API which is not provided in the document.
 
-`mvn spring-boot:run`
 
-		OR
+- Some clarifications needed on POST Upload API via CSV file
 
-b) Run the app by by creating a docker container
+1. How do we deal if the some of the records in the CSV file are invalid and failed to process? Do the process need
+   abort or continue
 
-`docker-compose up`
-
-4. Postman Collection
-
-`curl --location --request GET 'http://localhost:8080/v1/scoring-processes'
---header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfbmFtZSI6IjE0MTQ1YjE2LWVhNjMtNDE5NS04ZGY4LTMyZmVlMzk0YWI5OCIsImN1c3RvbV9jbGllbnRfaWRlbnRpZmljYXRpb24iOlsiYXRobG9uLW5sIl0sImlhdCI6MTU4NDY5NDkzMn0.g-2_y3c6g28oDkha8izI-KIRUN1LSj4L-cqI_hovatc'`
 
 ## Run tests
 
