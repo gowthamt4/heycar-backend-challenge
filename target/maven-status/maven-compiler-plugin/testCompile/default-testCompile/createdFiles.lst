@@ -1,1 +1,3 @@
 com\heycar\vehicle\challenge\HeyCarServicesApplicationTests.class
+com\heycar\vehicle\challenge\service\HeyCarVehicleServiceTest.class
+com\heycar\vehicle\challenge\controller\HeyCarVehicleControllerTest.class

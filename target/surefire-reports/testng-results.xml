@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="1472" started-at="2020-05-17T20:56:11 CEST" finished-at="2020-05-17T20:56:13 CEST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="1472" started-at="2020-05-17T20:56:11 CEST" finished-at="2020-05-17T20:56:13 CEST">
+      <class name="com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest@694e1548]" name="setup" is-config="true" duration-ms="6" started-at="2020-05-17T20:56:12 CEST" finished-at="2020-05-17T20:56:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createOrUpdateVehicles()[pri:0, instance:com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest@694e1548]" name="createOrUpdateVehicles" duration-ms="140" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrUpdateVehicles -->
+        <test-method status="PASS" signature="getAll()[pri:0, instance:com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest@694e1548]" name="getAll" duration-ms="3" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAll -->
+        <test-method status="PASS" signature="getVehiclesByColor()[pri:0, instance:com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest@694e1548]" name="getVehiclesByColor" duration-ms="12" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVehiclesByColor -->
+        <test-method status="PASS" signature="getVehiclesByMake()[pri:0, instance:com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest@694e1548]" name="getVehiclesByMake" duration-ms="2" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVehiclesByMake -->
+        <test-method status="PASS" signature="getVehiclesByModel()[pri:0, instance:com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest@694e1548]" name="getVehiclesByModel" duration-ms="2" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVehiclesByModel -->
+        <test-method status="PASS" signature="getVehiclesByYear()[pri:0, instance:com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest@694e1548]" name="getVehiclesByYear" duration-ms="2" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVehiclesByYear -->
+      </class> <!-- com.heycar.vehicle.challenge.service.HeyCarVehicleServiceTest -->
+      <class name="com.heycar.vehicle.challenge.controller.HeyCarVehicleControllerTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.heycar.vehicle.challenge.controller.HeyCarVehicleControllerTest@1f554b06]" name="setup" is-config="true" duration-ms="486" started-at="2020-05-17T20:56:11 CEST" finished-at="2020-05-17T20:56:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:com.heycar.vehicle.challenge.controller.HeyCarVehicleControllerTest@1f554b06]" name="testSearch" duration-ms="658" started-at="2020-05-17T20:56:12 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="testUploadCsvPartialSuccess()[pri:0, instance:com.heycar.vehicle.challenge.controller.HeyCarVehicleControllerTest@1f554b06]" name="testUploadCsvPartialSuccess" duration-ms="17" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadCsvPartialSuccess -->
+        <test-method status="PASS" signature="testUploadCsvSuccess()[pri:0, instance:com.heycar.vehicle.challenge.controller.HeyCarVehicleControllerTest@1f554b06]" name="testUploadCsvSuccess" duration-ms="2" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadCsvSuccess -->
+        <test-method status="PASS" signature="testUploadCsvUnableToReadFile()[pri:0, instance:com.heycar.vehicle.challenge.controller.HeyCarVehicleControllerTest@1f554b06]" name="testUploadCsvUnableToReadFile" duration-ms="92" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadCsvUnableToReadFile -->
+        <test-method status="PASS" signature="testUploadJson()[pri:0, instance:com.heycar.vehicle.challenge.controller.HeyCarVehicleControllerTest@1f554b06]" name="testUploadJson" duration-ms="3" started-at="2020-05-17T20:56:13 CEST" finished-at="2020-05-17T20:56:13 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadJson -->
+      </class> <!-- com.heycar.vehicle.challenge.controller.HeyCarVehicleControllerTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -34,20 +34,29 @@ public class HeyCarVehicleService {
    
 
   public List<Vehicle> getVehiclesBySearch(String make, String model, String year, String color) {
-    Pageable pageable = null;
+    Pageable pageable = Pageable.unpaged();
     if(make != null && model == null && year == null && color == null) {
-      vehicleDAO.findAllByMake(make, pageable).getContent();
+      return vehicleDAO.findAllByMake(make, pageable).getContent().stream().map(this::mapToVehicleObject).collect(Collectors.toList());
     } else if(make == null && model != null && year == null && color == null) {
-      vehicleDAO.findAllByModel(model, pageable).getContent();
+      return vehicleDAO.findAllByModel(model, pageable).getContent().stream().map(this::mapToVehicleObject).collect(Collectors.toList());
     } else if(make == null && model == null && year != null && color == null) {
-      vehicleDAO.findAllByYear(year, pageable).getContent();
+      return vehicleDAO.findAllByYear(year, pageable).getContent().stream().map(this::mapToVehicleObject).collect(Collectors.toList());
     } else if(make == null && model == null && year == null && color != null) {
-      vehicleDAO.findAllByColor(color, pageable).getContent();
+      return vehicleDAO.findAllByColor(color, pageable).getContent().stream().map(this::mapToVehicleObject).collect(Collectors.toList());
     } else {
-      vehicleDAO.findAll();
+      return vehicleDAO.findAll().stream().map(this::mapToVehicleObject).collect(Collectors.toList());
     }
-    
-    return null;
+  }
+  
+  private Vehicle mapToVehicleObject(final com.heycar.vehicle.challenge.model.Vehicle vehicle) {
+    Vehicle restModel = new Vehicle();
+    restModel.setCode(vehicle.getCode());
+    restModel.setColor(vehicle.getColor());
+    restModel.setKW(vehicle.getKW());
+    restModel.setMake(vehicle.getMake());
+    restModel.setModel(vehicle.getModel());
+
+    return restModel;
   }
 
 }
