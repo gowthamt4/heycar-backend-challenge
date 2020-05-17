@@ -6,19 +6,19 @@ Repository for HeyCar Vehicle Services
 
 1. Clone the repository and change the directory
 
-`git clone https://github.com/gowthamt4/heycar-backend-challenge.git`
+   `git clone https://github.com/gowthamt4/heycar-backend-challenge.git`
 
-`cd heycar-backend-challenge`
+   `cd heycar-backend-challenge`
 
-2. a) Run the app from IDE
+2. Through IDE or as a Docker container
+ a) Run the app from IDE
 
-`mvn spring-boot:run`
+   `mvn spring-boot:run`
 
-		OR
 
-b) Run the app by by creating a docker container
+ b) Run the app by by creating a docker container
 
-`docker-compose up`
+  `docker-compose up`
 
 4. Postman Collection
 
