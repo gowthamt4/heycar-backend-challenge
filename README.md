@@ -22,8 +22,6 @@ Repository for HeyCar Vehicle Services
 
 4. Postman Collection
 
-`curl --location --request GET 'http://localhost:8080/v1/scoring-processes'
---header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfbmFtZSI6IjE0MTQ1YjE2LWVhNjMtNDE5NS04ZGY4LTMyZmVlMzk0YWI5OCIsImN1c3RvbV9jbGllbnRfaWRlbnRpZmljYXRpb24iOlsiYXRobG9uLW5sIl0sImlhdCI6MTU4NDY5NDkzMn0.g-2_y3c6g28oDkha8izI-KIRUN1LSj4L-cqI_hovatc'`
 
 ## Run tests
 

@@ -14,6 +14,10 @@ import lombok.Setter;
 @AllArgsConstructor
 public class HeyCarResponseEntity implements Serializable{
   
+  /**
+   * 
+   */
+  private static final long serialVersionUID = 8496186692439084668L;
   private String message;
   private HttpStatus code;
   private List<String> skippedRecords;
