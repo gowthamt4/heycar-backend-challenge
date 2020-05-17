@@ -7,6 +7,7 @@ The document didn't give the details about dealer and dealer-provider relationsh
 This leads to following problems
 
 - This leaves in confusion whether the dealer id should be considered as mandatory field to API.
+- Datatype of dealer_id
 - How the API should handle if the dealer not registered at HeyCar
 - The documents says `Provider - the platform the dealers already use to manage their own listings`
   What if a single dealer is registered at multiple providers with different dealer IDs. This leads to duplicate
@@ -24,23 +25,29 @@ This leads to following problems
 3. Some clarifications needed on POST Upload API via CSV file
 
 - How do we deal if the some of the records in the CSV file are invalid and failed to process? Do the process need
-   abort or continue
+   abort or continue?
 
 
-## Run tests
+## Executed Test and Results
 
-Running the unit tests can be done like this
+Because of limited time, only the unittest cases for controller and services are covered.
 
-`make unit-tests` or `mvn clean test`
 
-Running the integration tests can be done like this
+## Ideas you would like to implement if you had time - explain how you would implement them
 
-`make integration-tests` or `mvn clean integration-test`
+1. Search API - Would implement sorting and pagination. Will pick the default search fields in order to sort the results.
+   For example, by price or by most recent
+2. Implement a Dealer API in order to be used by a dealer to get registered at HeyCar. Will create a POST API for Dealer.
+3. Implement a Provider API and relationship between Dealer and Provider. Make sure no vehicles are duplicated from same dealer.
+   We can achieve this by performing Normalization of the relation tables
 
-## How to contribute?
 
-Create a new branch, implement the feature and don't forget to add docs and tests. Create a pull request and assign reviewers and labels.
+## Decisions you had to take and why
 
-## Challenge Problems/Details
-
-All the challenge related assumptions and points have been placed in the [heycar-backend-challenge/blob/master/CHALLENGE.md](CHALLENGE.md) file.
+1. Database tables: Decided to go with only one table `Vehicles` as there is no clear relationship between dealer and provider.
+   and no more details of dealer except dealer_id.
+2. As this is a challenge, considered the database with `H2` in memory database
+3. No creation of `new dealer_id` as the requirements are not clear.
+4. CSV POST call upload: Processing all the records if valid and returning `201 response code with no errors`. But if there are any errors
+   the response code would still be `201 but returns the failed records`.
+5. Search API: only implemented the basic search with the fields mentioned as the default sorting techniques are not clear.
