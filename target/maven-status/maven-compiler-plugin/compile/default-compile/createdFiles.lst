@@ -1,9 +1,0 @@
-com\heycar\vehicle\challenge\service\HeyCarVehicleService.class
-com\heycar\vehicle\challenge\model\AbstractEntity.class
-com\heycar\vehicle\challenge\HeyCarServicesApplication.class
-com\heycar\vehicle\challenge\rest\model\Vehicle.class
-com\heycar\vehicle\challenge\exception\HeyCarResponseEntity.class
-com\heycar\vehicle\challenge\model\DealerVehicleId.class
-com\heycar\vehicle\challenge\model\Vehicle.class
-com\heycar\vehicle\challenge\dao\VehicleDAO.class
-com\heycar\vehicle\challenge\controller\HeyCarVehicleController.class

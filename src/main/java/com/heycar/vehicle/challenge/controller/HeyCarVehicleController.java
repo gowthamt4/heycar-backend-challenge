@@ -40,7 +40,7 @@ public class HeyCarVehicleController {
   private HeyCarVehicleService heyCarVehilceService;
 
   @PostMapping("vehicle_listings/upload_csv/{dealer_id}")
-  public HeyCarResponseEntity uploadVehicles(@PathVariable String dealerId,
+  public HeyCarResponseEntity uploadVehicles(@PathVariable("dealer_id") String dealerId,
       @RequestParam("file") MultipartFile file) {
     List<String> errors = new ArrayList<String>();
     try {
