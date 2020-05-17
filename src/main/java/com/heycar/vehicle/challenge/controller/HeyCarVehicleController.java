@@ -89,10 +89,10 @@ public class HeyCarVehicleController {
     vehicle.setCode(vehicleData[0]);
     vehicle.setMake(makeModelData[0]);
     vehicle.setModel(makeModelData[1]);
-    vehicle.setKW(vehicleData[2]);
+    vehicle.setKW(Integer.valueOf(vehicleData[2]));
     vehicle.setYear(vehicleData[3]);
     vehicle.setColor(vehicleData[4]);
-    vehicle.setPrice(vehicleData[5]);
+    vehicle.setPrice(Long.parseLong(vehicleData[5]));
     return vehicle;
   }
 }

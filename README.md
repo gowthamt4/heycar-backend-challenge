@@ -21,7 +21,7 @@ Repository for HeyCar Vehicle Services
   `docker-compose up`
 
 4. Postman Collection
-
+   [heycar-backend-challenge/blob/master/HeyCarCollection.postman_collection](HeyCarCollection.postman_collection)
 
 ## Run tests
 

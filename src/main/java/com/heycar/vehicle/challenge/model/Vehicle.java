@@ -36,7 +36,7 @@ public class Vehicle extends AbstractEntity {
   private String model;
   
   @Column(name = "vehicle_power_in_ps")
-  private String kW;
+  private Integer kW;
   
   @Column(name = "vehicle_year")
   private String year;
@@ -45,7 +45,7 @@ public class Vehicle extends AbstractEntity {
   private String color;
   
   @Column(name = "vehicle_price")
-  private String price;
+  private Long price;
   
   
 }

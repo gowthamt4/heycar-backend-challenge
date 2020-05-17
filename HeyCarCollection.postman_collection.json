@@ -1,0 +1,130 @@
+{
+	"id": "0f821afd-c53f-92f1-1635-f7f8b805c9aa",
+	"name": "HeyCarCollection",
+	"description": "",
+	"order": [
+		"2e595d97-4597-8e41-1623-b998338409b1",
+		"6400c1c1-b9cc-da9a-7b40-127218afc9d1",
+		"87c7e84c-2dfb-eb1a-99ec-08a8b802a852",
+		"77d56318-110a-c4cb-2f95-e2b87ed763cb"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1589669815552,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2e595d97-4597-8e41-1623-b998338409b1",
+			"headers": "//Accept: application/json\n//Content-Type: multipart/form-data\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/v1/vehicle_listings/upload_csv/1233",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "uploadCsvTestData.csv",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1589742472528,
+			"name": "POST as JSON",
+			"description": "",
+			"collectionId": "0f821afd-c53f-92f1-1635-f7f8b805c9aa",
+			"responses": []
+		},
+		{
+			"id": "6400c1c1-b9cc-da9a-7b40-127218afc9d1",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0f821afd-c53f-92f1-1635-f7f8b805c9aa",
+			"data": null,
+			"dataMode": "params",
+			"name": "CSV POST upload",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1589740502749,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "77d56318-110a-c4cb-2f95-e2b87ed763cb",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0f821afd-c53f-92f1-1635-f7f8b805c9aa",
+			"data": null,
+			"dataMode": "params",
+			"name": "CSV POST upload",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1589742462147,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "87c7e84c-2dfb-eb1a-99ec-08a8b802a852",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0f821afd-c53f-92f1-1635-f7f8b805c9aa",
+			"data": null,
+			"dataMode": "params",
+			"name": "Search API",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1589742446437,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

@@ -51,3 +51,8 @@ Because of limited time, only the unittest cases for controller and services are
 4. CSV POST call upload: Processing all the records if valid and returning `201 response code with no errors`. But if there are any errors
    the response code would still be `201 but returns the failed records`.
 5. Search API: only implemented the basic search with the fields mentioned as the default sorting techniques are not clear.
+
+## Extras
+
+1. Implemented Containerization
+2. Integration Tests - Not implemented because of lack of time

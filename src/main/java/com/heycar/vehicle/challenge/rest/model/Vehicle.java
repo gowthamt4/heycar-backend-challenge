@@ -1,6 +1,7 @@
 package com.heycar.vehicle.challenge.rest.model;
 
 import java.io.Serializable;
+import java.time.Year;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,12 +30,12 @@ public class Vehicle implements Serializable{
   private String model;
   
   @JsonProperty(value = "kW")
-  private String kW;
+  private Integer kW;
   
   private String year;
   
   private String color;
   
-  private String price;
+  private Long price;
 
 }

@@ -109,10 +109,10 @@ public class HeyCarVehicleControllerTest {
         vehicle.setCode("a");
         vehicle.setMake("renault");
         vehicle.setModel("megane");
-        vehicle.setKW("132");
+        vehicle.setKW(132);
         vehicle.setYear("2014");
         vehicle.setColor("red");
-        vehicle.setPrice("13990");
+        vehicle.setPrice(Long.parseLong("13990"));
         return vehicle;
     }
 }
