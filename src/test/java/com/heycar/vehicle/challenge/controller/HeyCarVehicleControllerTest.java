@@ -101,7 +101,6 @@ public class HeyCarVehicleControllerTest {
         heyCarVehicleController.search("renault", null, null, null);
         Mockito.verify(heyCarVehicleService, Mockito.times(1))
                 .getVehiclesBySearch(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any());
-
     }
 
     private Vehicle constructMockVehicle() {
